@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+
+        if (!isNaN(numero) && numero >= 0) {
+            let primeiro = 0;
+            let segundo = 1;
+            let fibonacci = 0;
+
+            document.write("Sequência de Fibonacci até o número " + numero + ": <br>");
+ 
+            if (numero === 0) {
+                document.write(primeiro);
+            } else {
+                document.write(primeiro); 
+ 
+                do {
+                    document.write(segundo);
+
+                    fibonacci = primeiro + segundo;
+                    primeiro = segundo;
+                    segundo = fibonacci;
+                } while (fibonacci <= numero);
+            }
+        } else {
+            document.write("Por favor, digite um número inteiro válido maior ou igual a 0.");
+}
+
+
+    </script>
+</body>
+</html>

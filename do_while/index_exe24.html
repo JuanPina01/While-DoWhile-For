@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let totalIdades = 0;
+        let contador = 0;
+
+        do {
+            let nome = prompt("Nome da pessoa:");
+            let idade = parseInt(prompt("Idade da pessoa:"));
+
+            if (!isNaN(idade)) {
+                totalIdades += idade;
+                contador++;
+            } else {
+               document.write("Por favor, digite uma idade válida.");
+            }
+        } while (contador < 5);
+
+        let mediaIdades = totalIdades / contador
+
+        document.write("A média das idades das 5 pessoas é: ", mediaIdades);
+
+
+    </script>
+</body>
+</html>

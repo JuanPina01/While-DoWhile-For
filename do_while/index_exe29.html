@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+        let fatorial = 1;
+        let contador = 1;
+
+        if (!isNaN(numero) && numero >= 0) {
+  
+            do {
+                fatorial *= contador;
+                contador++;
+            } while (contador <= numero);
+            document.write("O fatorial de " + numero + " é: <br>", fatorial);
+        } else {
+            docuemnt.write("Por favor, digite um número inteiro válido maior ou igual a 0.");
+        }
+
+
+    </script>
+</body>
+</html>

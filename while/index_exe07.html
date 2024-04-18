@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let numero = parseInt(prompt("Digite um numero inteiro:"))
+        let divisor = 1;
+        let primo = true
+
+        while (divisor < numero) {
+        if (numero % divisor === 0) {
+            primo = false;
+        }
+        divisor++;
+        }
+
+        if (primo || numero > 1) {
+            document.write(numero + " é um número primo.");
+        } else {
+            document.write(numero + " não é um número primo.");
+        }
+    </script>
+</body>
+</html>

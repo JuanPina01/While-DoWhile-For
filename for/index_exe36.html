@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divisores de um Número</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    let numero = parseInt(prompt("Digite um número inteiro positivo:"));
+
+    if (!isNaN(numero) && numero > 0) {
+        document.write("Os divisores de " + numero + " são: ");
+
+        for (let i = 1; i <= numero; i++) {
+            if (numero % i === 0) {
+               document.write(i + " ");
+            }
+        }
+    } else {
+        document.write("Por favor, digite um número inteiro positivo válido.");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let soma = 0;
+        let contador = 0;
+
+        while (contador < 5) {
+            let numero = parseInt(prompt("Digite um número inteiro: "));
+            soma += numero;
+            contador++;
+        }
+
+        let media = soma / 5;
+        document.write("A média aritmética dos números digitados é:", media);
+
+    </script>
+</body>
+</html>
